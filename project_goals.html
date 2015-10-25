@@ -1,0 +1,190 @@
+<html>
+<!---------------------------------------------------------------OVERALL FONT AND COLOR---------------------------------------------------------------->
+  <head style="background-color:#FDF7DF">
+
+<!-------------------------------------------------------------------FAVICON IMAGE--------------------------------------------------------------------->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="js/bootstrap.js"></script>
+
+<!--
+<script type"text/javascript">
+	$(function () {
+		$("style[media*='screen']").remove();
+		$("link[href*='favicon']").remove();
+		//fix heading
+		var h1 = $(".firstHeading").text().split("/");
+		$(".firstHeading").text(h1[h1.length-1]);
+		$("tr:odd").addClass("odd");
+	});
+	$('link[rel="shortcut icon"]').attr('href','http://openwetware.org/images/6/61/Injectimod_Favicon.png');
+</script>
+-->
+      
+<link rel="icon" type="image/png" href="Injectimod_favicon.png">
+
+<!-------------------------------------------------------------CSS FONTS AND SHIT------------------------------------------------------------------------>
+
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/biomod_2015.css" rel="stylesheet">
+
+<!-------------------------------------------------------------ACTUAL HEADER------------------------------------------------------------->
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation" style="font-family: KOMIKA; font-size: 125%; background-color: #005c64; border-style: solid; border-color: #9d493f; border-width: 0px 0px 7px 0px">
+  <div class="container">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+		  <span class="sr-only">Toggle navigation</span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		</button>
+                <img src="images/Injectimod_bannerlogo.png" style="padding: 3px 15px 0px 10px; width: 191.1; height: 47.32px;">
+	</div>
+	<div class="navbar-collapse collapse">
+	  <ul class="nav navbar-nav">
+		<li id="home_link"><a href="index.html">Home</a></li>
+		<!--<li id="project_link"></li>-->
+		<li id="project_link" class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Our Project<span class="caret"></span></a>
+			<ul class="dropdown-menu" role="menu" style="background-color: #c4928c">
+				<li><a href="project_background.html" style="background-color: #c4928c; color: #ffffff">The Background</a></li>
+				<li class="divider"></li>
+				<li><a href="project_goals.html" style="background-color: #c4928c; color: #8c3425">The Goals</a></li>
+			</ul>
+		</li>
+		<!--<li id="lab_book_link"></li>-->
+		<li class="dropdown" id="lab_book_link">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Our Lab Book<span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu" style="background-color: #337D83">
+				<li><a href="labbook_page.html" style="background-color: #337D83; color: #ffffff">Overview</a></li>
+				<li class="divider"></li>
+				<li><a href="labbook_bioblueprint.html" style="background-color: #337D83; color: #ffffff">Bio Blueprint</a></li>
+                <li class="divider"></li>
+				<li style="padding-bottom: 6px"><a href="labbook_proteindesign.html" style="background-color: #337D83; color: #ffffff">Protein Design</a></li>
+				<li style="padding-bottom: 6px"><a href="labbook_proteinproduction.html" style="background-color: #337D83; color: #ffffff">Protein Production</a></li>
+				<li style="padding-bottom: 6px"><a href="labbook_dnadesign.html" style="background-color: #337D83; color: #ffffff">DNA Design</a></li>
+                <li style="padding-bottom: 6px"><a href="labbook_conjugation.html"  style="background-color: #337D83; color: #ffffff">Chemistry Conjugation</a></li>
+				<li style="padding-bottom: 6px"><a href="labbook_imaging.html" style="background-color: #337D83; color: #ffffff">Imaging</a></li>
+				<li style="padding-bottom: 7px"><a href="labbook_kinetics.html" style="background-color: #337D83; color: #ffffff">Kinetics</a></li>
+			</ul>
+		</li>
+        <li id="team_link"><a href="team_page.html">Our Team</a></li>
+		<li id="sponsors_link"><a href="sponsors_page.html">Sponsors</a></li>
+	  </ul>
+	</div><!--/.nav-collapse -->
+  </div>
+</div>
+  <head>
+	
+	<script type="text/javascript">
+		$('#project_link').addClass('active');
+	</script>
+
+<!---------------------------------------------------------------CSS AND SHIT----------------------------------------------------------------->
+      
+<style>
+    #GOALS {
+        font-weight: bold;
+        font-size: 20px;
+        width: auto;
+	    display: block; 
+	    vertical-align: right; 
+        text-align: left;   
+	    font-size: 120%;
+        padding: 20px 20px 20px 20px;
+        border-style: solid;
+        border-color: #005c64;
+        border-width: 20px;
+        border-radius: 25px;
+        background-color: #ffffff;    
+    }  
+    
+    #to_overview {
+        color: #005c64;
+    }
+    
+    #to_overview:hover {
+        color: #8c3425;
+        text-decoration: none;
+    }
+    
+</style>
+      
+<!---------------------------------------------------------------CONTENT AND SHIT------------------------------------------------------------->
+
+<div class="container" style="text-align:left; margin-top: 75px;">
+    <div class="row">
+        <h2 style="padding-left: 35px">The Goals</h2>
+    </div>
+    <div id="GOALS">
+        <p style="font-size: 20px">To achieve assembly of the protein tip complex, there were several goals that had to be accomplished:
+            <ol>
+                <li style="padding-top:7px"><span style="color: #005c64">THE BIOLOGICAL BLUEPRINT: FIND OUT HOW NATURE BUILDS THE TIP COMPLEX</span></li>
+                    <ul>
+                        <li style="padding-top:7px">Understand the current models of T3SS needle tip assembly</li>
+                        <li style="padding-top:7px">Define the physical parameters of the needle filament and the needle tip complex </li>
+                        <li style="padding-top:7px">Determine the solution structure of tip proteins</li>
+                        <li style="padding-top:7px">Establish own model based on current evidences</li>
+                    </ul>
+                <br>
+                <li style="padding-top:7px"><span style="color: #005c64">DESIGN AND BUILD A DNA NANOSTRUCTURE TO MIMIC NATURE'S CONSTRUCTION SCAFFOLD</span></li>
+                    <ul>
+                        <li style="padding-top:7px">Design a range of DNA scaffolds that mimic the natural needle template</li>
+                        <li style="padding-top:7px">Obtain the sequences for the DNA strands necessary to construct the scaffolds</li>
+                        <li style="padding-top:7px">Perform DNA origami to construct the DNA scaffolds</li>
+                        <li style="padding-top:7px">Demonstrate assembly of the barrel template through atomic force microscopy (AFM)</li>
+                    </ul>
+                <br>
+                <li style="padding-top:7px"><span style="color: #005c64">OBTAIN THE MATERIALS NEEDED TO ASSEMBLE THE T3SS TIP COMPLEX</span></li>
+                    <ul>
+                        <li style="padding-top:7px">Generate expression vectors containing our tip protein sequence</li>
+                        <li style="padding-top:7px">Clone these vectors into T7 E. coli for expressing and harvesting our tip proteins</li>
+                        <li style="padding-top:7px">Purify our tip proteins via histidine affinity chromatography and size exclusion chromatography</li>
+                        <li style="padding-top:7px">Label our purified protein with Alexa488 dye for single molecule fluorescent microscopy</li>
+                    </ul>                    
+                <br>
+                <li style="padding-top:7px"><span style="color: #005c64">DEVISE CHEMISTRY CONJUGATION METHODS TO ATTACH THE TIP PROTEINS ONTO OUR DNA SCAFFOLD</span></li>
+                    <ul>
+                        <li style="padding-top:7px">Investigate a range of conjugation methods for attaching proteins to DNA</li>
+                        <li style="padding-top:7px">Produce and purify tris-NTA DNA for use with different scaffolds</li>
+                    </ul>
+                <br>
+                <li style="padding-top:7px"><span style="color: #005c64">VISUALISE THE ASSEMBLY OF THE T3SS TIP COMPLEX (KINETICS + SINGLE MOLECULE FLUORESCENCE)</span></li>
+                    <ul>
+                        <li style="padding-top:7px;"><span style="color: #005c64">Kinetics</span></li>
+                            <ul>
+                                <li style="padding-top:7px">Optimisation of biolayer interferometry protocols for DNA-DNA and DNA-protein interactions</li>
+                                <li style="padding-top:7px">Characterise the kinetic values of 10bp NTA DNA to monomer template</li>
+                                <li style="padding-top:7px">Characterise the kinetic values of single protein to monomer template</li>
+                                <li style="padding-top:7px">Assemble the protein tip using DNA racquet template</li>
+                                <li style="padding-top:7px">Characterise the kinetic values of five proteins to racquet template</li>
+                                <li style="padding-top:7px">Determine if protein complex assembles cooperatively</li>
+                            </ul>
+                        <li style="padding-top:7px;"><span style="color: #005c64">Single Molecule Fluorescence</span></li>
+                            <ul>
+                                <li style="padding-top:7px">Characterise the background intensity of neutravidin surface</li>
+                                <li style="padding-top:7px">Label tip proteins with fluorophore for single molecule microscopy</li>
+                                <li style="padding-top:7px">Characterise the intensity of a single fluorophore</li>
+                                <li style="padding-top:7px">Characterise the non-specific interaction of fluorophore with neutravidin surface
+                                <li style="padding-top:7px">Observe the intensity vs. time profile of fluorophore at the presence of our DNA scaffold</li>
+                            </ul>
+                    </ul>
+            </ol>
+        <p style="font-size: 20px; padding-top: 7px">Check out our awesome workflow <a id="to_overview" href="labbook_page.html">here</a>!</p>
+    </div>
+</div>
+      
+      
+<br>
+       
+<!--------------------------------------------------------------ACTUAL FOOTER------------------------------------------------------------------->
+
+    <div class="footer">
+        <div class="container">
+	     <div style="height: 5px;"></div>
+        <p style="font-size: 80%; font-family: GUDEA, Arial, serif; color: #ffffff;">Contact: <a id="footer_link" href="mailto:BIOMODaustralia@gmail.com">BIOMODaustralia@gmail.com</a> | &copy;2015 Team Injectimod. All rights reserved. This team is supported by the <a id="footer_link" href="http://www.unsw.edu.au">University of New South Wales</a> and <a id="footer_link" href="http://www.victorchang.edu.au">Victor Chang Cardiac Research Institute</a>
+        </div>
+    </div>
+      
+
+</html>
